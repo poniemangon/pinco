@@ -24,7 +24,7 @@ header {width: 100%;}
 
 li, a  {font-family: 'Open Sans', sans-serif; font-size: 20px; text-decoration: none; }
 
-button {font-family: 'Open Sans', sans-serif; font-size: 20px; text-decoration: none; }
+button {font-family: 'Open Sans', sans-serif; font-size: 20px!important; text-decoration: none; }
 
 p {font-family: 'Open Sans', sans-serif; font-size: 16px; text-decoration: none; }
 
@@ -87,7 +87,7 @@ button.btn:hover {background-color: var(--primary)!important; color: white!impor
 
 header.solid {background-color: white; box-shadow: -2px 8px 54px -20px rgba(112,112,112,1);}
 
-header {padding: 50px 0; position: fixed; z-index: 10; width: 100%;}
+header {padding: 50px 0; position: fixed; z-index: 11; width: 100%;}
 
 header .logo {width: 170px;}
 
@@ -97,9 +97,11 @@ header ul a:hover {color: var(--primary);}
 
 header ul {gap: 30px;}
 
-header li button {background-color: var(--primary)!important;  font-size: 20px; color: white!important; }
+header .phone-num {font-size: 18px;}
 
-header li button:hover {background-color: black!important;}
+header li .btn {background-color: var(--primary)!important;  font-size: 20px; color: white!important;}
+
+header li .btn:hover {background-color:transparent!important; border: 2px solid var(--primary); color: var(--primary)!important; padding: 5px 11px!important;}
 
 header .navbar-toggle {background-color: transparent; border: none; }
 
@@ -111,11 +113,11 @@ header .navbar-toggle .fa-bars { font-size: 35px; color: var(--primary);}
 
 .modal-dialog {margin: 0!important;}
 
-.modal-content {border: none; border-radius: 0; width: 100vw; height: 100vh;}
+.modal-content {border: none; border-radius: 0; width: 100vw; height: 100vh; z-index: 25;}
 
 .modal-header {border: none;}
 
-.modal-body a, .modal-body button {font-size: 30px;}
+.modal-body a, .modal-body .btn {font-size: 18px;}
 
 .modal-body ul.d-flex {gap: 20px; flex-direction: column;}
 
@@ -143,7 +145,9 @@ main {position: relative; width: 100%; }
 .side-buttons .side-btn i {font-size: 22px; line-height: 1;}
 
 
-.side-buttons .linked-in {background-color: white; box-shadow: 10px 10px 175px 50px #aaaaaa;} 
+.side-buttons .linked-in {background-color: white;} 
+
+.side-buttons .side-btn { box-shadow: 10px 10px 175px 15px #c5c5c5;}
 
 .side-buttons .linked-in a {color: var(--primary); }
 
@@ -193,7 +197,7 @@ i.carousel-control-next-icon {
 
 .banner .row h2 {line-height: 1.6; position: relative; }
 
-.banner button {background-color: var(--secondary); color: white; position: relative; top: 76px;}
+.banner button {background-color: var(--secondary); color: white; position: relative; top: 90px;}
 
 
 
@@ -280,7 +284,7 @@ i.carousel-control-next-icon {
 
 /* values */
 
-.values h6 {color: var(--secondary);}
+.values h6 {color: var(--secondary); font-size: 14px}
 
 .values  {overflow: hidden; color: black;}
 
@@ -288,7 +292,7 @@ i.carousel-control-next-icon {
 
 .values .circle-image {width: 100%; justify-content: center;  }
 
-.values p {line-height: 1.4; color: #959595;}
+.values p {line-height: 1.7; color: #959595;}
 
 .values .circle-image img {align-self: center; background-color: white; padding: 30px; border-radius: 50%; box-shadow: -2px 7px 54px 0px rgba(161,161,161,0.37); height: 133px; width: 133px;}
 
