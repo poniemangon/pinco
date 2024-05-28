@@ -344,6 +344,8 @@ footer a:hover {color: var(--primary);}
 
 .main-footer a {font-size: 16px; color: white;}
 
+.main-footer a:hover {color: black;}
+
 .main-footer ul * {margin-bottom: 5px;}
 
 .main-footer ul.menu-nav {column-count: 2;}
